@@ -28,11 +28,11 @@ fare = st.number_input('Fare',min_value=0.0, max_value= 513.0, step= 0.01)
 embarked = st.selectbox('Embarked',['C','Q','S'])
 
 if st.button('predict'):
-    with open('age_scalar','rb') as f:
+    with open('age_scalar.pkl','rb') as f:
         age_scalar = pickle.load(f)
-    with open('fare_scalar','rb') as f:
+    with open('fare_scalar.pkl','rb') as f:
         fare_scalar = pickle.load(f)
-    with open('embarked_label','rb') as f:    
+    with open('embarked_label.pkl','rb') as f:    
         embarked_label = pickle.load(f)
 
     sex = 0 if sex == 'male' else 1
