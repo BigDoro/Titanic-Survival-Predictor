@@ -4,7 +4,10 @@ import numpy as np
 
 
 st.title("🚢 Titanic Survival Predictor")
-st.write("Welcome! This app will predict if a passenger survived.")
+st.write(f"Welcome! This app will predict if a passenger survived.\n"
+         f"Choose a model"
+         )
+
 
 model_list={
         'Logistic Regression':'Titanic_Classifier_LogReg.pkl',
